@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    margin:20px;
+}
+#container {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px black;
+    margin:auto;
+    width: 80%;
+    height: 80vh;
+}
+
+#directions  {
+    display: flex;
+    justify-content: space-around;
+}
+#directions > button {
+    border: none;
+    background-color: whitesmoke;
+}
+
+#directions > button > i{
+    font-size: 62px;
+    margin-top: 10px;
+}
+#directions > button > i:hover{
+    color:rgb(57, 169, 63);
+}
