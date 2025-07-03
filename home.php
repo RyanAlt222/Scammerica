@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scammerica</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="includes/css_files/header.css">
 </head>
 <body>
     <?php include 'includes/html_files/header.html'; ?>
-
+    
     <div id="title-container">
         <h1 id="page-title">Scammerica</h1>
     </div>
