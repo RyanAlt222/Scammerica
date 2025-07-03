@@ -8,6 +8,10 @@
     background-color: rgb(0, 0, 0);
     padding:20px;
 }
+.header-container > nav {
+    display: flex;
+    justify-content:space-between;
+}
 .header-container > nav > ul > li {
     display: inline;
     margin-right: 20px;
@@ -20,3 +24,12 @@
     
     color: rgb(178, 178, 178); 
 }
+.header-container > nav > p > a{
+    color:rgb(247, 227, 162);
+    text-align: right;
+}
+
+
+
+
+
