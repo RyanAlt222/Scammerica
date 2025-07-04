@@ -27,3 +27,41 @@ h1 {
 #directions > button > i:hover{
     color:rgb(57, 169, 63);
 }
+
+/* Card */
+#card {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(198, 198, 198);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#card > #card-left {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    height: 100%;
+}
+#card > #card-left > p{
+    font-size: 30px;
+    margin: 0px 20px;
+  
+}
+#card > #card-right > button{
+    font-size: 22px;
+    padding: 10px;
+    margin: 20px;
+    border: none;
+    width: 100px;
+    border-radius:10px;
+    color:white;
+}
+#edit {
+    background-color: orange;
+}
+
+#delete {
+    background-color: red;
+}
