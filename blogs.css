@@ -1,0 +1,22 @@
+#blog-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* Card */
+#card {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(198, 198, 198);
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 200px;
+    height:200px;
+    text-align: center;
+}
+#card:hover {
+    background-color: rgb(163, 163, 163);
+}
+
