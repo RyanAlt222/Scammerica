@@ -37,8 +37,9 @@ error_reporting(E_ALL);
                     <p><?= htmlspecialchars($keys->article_date) ?></p>
                 </div>
                 <div id="card-right">
-                    <button id="edit"><a href="edit-article.php?id=<?= urlencode($keys->article_id) ?>">Edit</a></button>
-                    <button id="delete"><a href="delete-article.php?id=<?= urlencode($keys->article_id) ?>">Delete</a></button>
+                    <button id="read"><a href="read-blogs.php?id=<?= $keys->article_id ?>">Read</a></button>
+                    <button id="edit"><a href="blogs.php?id=<?= $keys->article_id ?>">Edit</a></button>
+                    <button id="delete"><a href="delete-article.php?id=<?= $keys->article_id ?>">Delete</a></button>
                 </div>
             </div>
             <?php } ?>
