@@ -1,6 +1,9 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
     require "connect.php";
-    $sql = "SELECT * FROM articles";
+    $sql = "SELECT * FROM Articles";
     $stmt = $pdo->prepare($sql);
     $stmt->setFetchMode(PDO::FETCH_OBJ);
     $stmt->execute();
@@ -34,8 +37,8 @@
                     <p><?= htmlspecialchars($keys->article_date) ?></p>
                 </div>
                 <div id="card-right">
-                    <button id="edit">Edit</button>
-                    <button id="delete">Delete</button>
+                    <button id="edit"><a href="edit-article.php?id=<?= urlencode($keys->article_id) ?>">Edit</a></button>
+                    <button id="delete"><a href="delete-article.php?id=<?= urlencode($keys->article_id) ?>">Delete</a></button>
                 </div>
             </div>
             <?php } ?>
