@@ -33,7 +33,8 @@ $results = $stmt->fetchAll();
                 <div id="card">
                     <p><?= htmlspecialchars($keys->title) ?></p>
                     <p><?= htmlspecialchars($keys->article_date) ?></p>
-                    <a href="">Read More</a>
+                    <a href="read-blog.php?id=<?= htmlspecialchars($keys->article_id) ?>" >Read More</a>
+                   
                 </div>
             <?php endforeach; ?>
         <?php endif; ?>
